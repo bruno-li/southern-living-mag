@@ -1,0 +1,88 @@
+.main-container{
+    width: 60%;
+    max-width: 850px;
+    margin: 90px auto;
+}
+
+.title{
+    &__list-link{ 
+        display: flex;
+        list-style: none;
+        margin-bottom: 2.2rem;
+
+        &__text{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 900;
+            color: $color-primary;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 10px;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+          
+        }
+    }
+
+    &__header{
+
+        &__heading{
+            font-size: 48px;
+            line-height: 52px;
+            font-weight: 700;
+        }
+        &__paragraph{
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-primary;
+            margin-top: 10px;
+        }
+    }
+
+    &__author{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 1rem 0;
+
+        &__name{
+            font-weight: 700;
+            color: $color-primary;
+
+        }
+    }
+}
+
+.social__media{
+    &-link{
+
+    }
+}
+
+.main-content{
+    &__photo-container{
+        &__img{
+            width: 100%
+        }
+    }
+
+    &__paragraph{
+        font-family: "Lora";
+        font-size: 18px;
+        line-height: 28px;
+        color: $color-primary;
+        margin-top: 28px;
+
+    }
+    &__link{
+        margin-top: 28px;
+
+        &__text{
+            color: $color-primary;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
