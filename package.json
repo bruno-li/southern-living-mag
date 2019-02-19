@@ -18,5 +18,8 @@
     "postcss-cli": "^6.1.1",
     "sass": "^1.17.0"
   },
-  "description": "souther-living-page"
+  "description": "souther-living-page",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
