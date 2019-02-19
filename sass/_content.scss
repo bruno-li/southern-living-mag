@@ -1,15 +1,22 @@
 .main-container{
+    font-family: "Lato", sans-serif;
     width: 60%;
     max-width: 850px;
     margin: 90px auto;
-}
+
 
 .title{
     &__list-link{ 
         display: flex;
-        list-style: none;
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.5rem;
 
+       &__item{
+            margin-right: 30px;
+           &:first-child{
+            list-style: none;
+           }
+       }
+        
         &__text{
             font-size: 14px;
             line-height: 20px;
@@ -17,13 +24,9 @@
             color: $color-primary;
             text-decoration: none;
             text-transform: uppercase;
-            margin: 10px;
-
             &:hover{
                 text-decoration: underline;
             }
-
-          
         }
     }
 
@@ -33,6 +36,7 @@
             font-size: 48px;
             line-height: 52px;
             font-weight: 700;
+            color: $color-primary;
         }
         &__paragraph{
             font-size: 18px;
@@ -46,43 +50,55 @@
         font-size: 14px;
         line-height: 20px;
         margin: 1rem 0;
+       
 
         &__name{
             font-weight: 700;
             color: $color-primary;
-
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
-}
-
-.social__media{
-    &-link{
-
+    &__paragraph{
+        font-size: 14px;
+        line-height: 20px;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 1.5rem;
     }
 }
 
 .main-content{
-    &__photo-container{
-        &__img{
-            width: 100%
+        &__photo-container{
+            &__img{
+                width: 100%
+            }
         }
-    }
 
-    &__paragraph{
-        font-family: "Lora";
-        font-size: 18px;
-        line-height: 28px;
-        color: $color-primary;
-        margin-top: 28px;
-
-    }
-    &__link{
-        margin-top: 28px;
-
-        &__text{
-            color: $color-primary;
+        &__paragraph{
             font-size: 18px;
             line-height: 28px;
+            color: $color-primary;
+            margin-top: 28px;
         }
+        
+        &__link{
+            margin-top: 28px;
+
+            &__text{
+                color: $color-primary;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+    .figure{
+        margin: 2rem auto;
+        &__img{
+            width: 640px;
+        }
+
     }
 }

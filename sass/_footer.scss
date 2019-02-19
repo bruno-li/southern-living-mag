@@ -4,11 +4,14 @@
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 4rem;
+    font-family: "Lato", sans-serif;
     text-align: center;
     color: $color-primary;
+    background-color: #F2F2F2;
     border-top: 1px solid rgba(0,0,0,.15);
     border-bottom: 1px solid rgba(0,0,0,.15);
 
+        // Left Container
     &__heading {
         font-weight: 700;
         font-size: 24px;
@@ -21,30 +24,29 @@
         margin-bottom: 3rem;
 
         &__img{
-            width: 23%;
+            width: 200px;
             height: 100%;
             margin: 0 auto;
         }
     }
-    // Left Container
+
     &__left-container{
-        flex: 0 0 30%;
+        flex: 0 0 380px;
         padding-bottom: 5rem;
 
         &__img{
             margin-top: 1rem;
-            width: 60%;
+            width: 300px;
         }
     }
     // Midle Container
     &__middle-container{
         height: 320px;
-        flex: 0 0 30%;
+        flex: 0 0 370px;
         border-right:1px solid rgba(0,0,0,.15);
         border-left: 1px solid rgba(0,0,0,.15);
 
         &-list {
-            font-family: "Lora";
             font-size: 14px;
             line-height: 20px;
             color: $color-primary;
@@ -65,28 +67,28 @@
     }
     // Right Container
     &__right-container{
-        flex: 0 0 30%;
+        flex: 0 0 300px;
         &__paragraph{
-            font-family: "Lora";
             font-size: 14px;
             line-height: 20px;
             margin: 1rem;
         }
         &__social{
-            width: 45%;
-            margin-bottom: 1rem;
+            width: 130px;
+            margin-bottom: 2.2rem;
         }
 
         &__btn{
-             padding: 12px;
-             width: 180px;
+             padding: 10px;
+             width: 130px;
              font-size: 15px;
+             font-weight: 700;
              text-transform: uppercase;
              letter-spacing: 0.1em;
-             color: #f5416c;
+             color: #000;
              border-style: solid;
-             border-color: #f5416c;
-             border-width: 3px;
+             border-color: #000;
+             border-width: 4px;
              background-color: rgb(252, 252, 252);
         }
     }
