@@ -113,10 +113,13 @@
             width: 600px;
             // MEDIA QUERIES
             @include respond(phone) { 
-                width: 560px; 
+                width: 100%; 
              } 
              @include respond(small-phone) { 
-                width: 420px;
+                width: 355px;
+             }     
+             @include respond(smallest-phone) { 
+                width: 325px;
              } 
         }
     }

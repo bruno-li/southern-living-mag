@@ -31,20 +31,40 @@
     }
 
     &__left-container{
-        flex: 0 0 380px;
+        flex: 0 0 350px;
         padding-bottom: 5rem;
+        // MEDIA QUERIES
+        @include respond(phone){
+            flex: 0 0 100%;
+        }
 
         &__img{
             margin-top: 1rem;
             width: 300px;
+
+              // MEDIA QUERIES
+         @include respond(phone){
+            width: 265px;
+        }
         }
     }
     // Midle Container
     &__middle-container{
-        height: 320px;
-        flex: 0 0 370px;
+        height: 360px;
+        flex: 0 0 300px;
         border-right:1px solid rgba(0,0,0,.15);
         border-left: 1px solid rgba(0,0,0,.15);
+
+         // MEDIA QUERIES
+         @include respond(phone){
+             border-left: none;
+             flex: 0 0 230px;
+             height: 300px;
+
+         }
+         @include respond(small-phone){
+            border-right: none;
+         }
 
         &-list {
             font-size: 14px;
@@ -55,7 +75,6 @@
         &__item{
             margin-top: 5px;
             padding-top: 12px;
-
         }
         &__link{
             text-decoration: none;
@@ -67,7 +86,12 @@
     }
     // Right Container
     &__right-container{
-        flex: 0 0 300px;
+        flex: 0 0 290px;
+
+        @include respond(phone) {
+            flex: 0 0 230px;
+
+        }
         &__paragraph{
             font-size: 14px;
             line-height: 20px;

@@ -22,7 +22,7 @@ $color-primary: rgba(0, 0, 0, .95);
 @mixin respond ($breakpoint) {
     /* Custom, iPhone Retina */ 
 	@if $breakpoint==smallest-phone {
-		@media (max-width: 320px) { 
+		@media (max-width: 375px) { 
 			@content; //allows us to pass a block of code to the mixin
 		} 
 	}
