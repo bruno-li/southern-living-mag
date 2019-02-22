@@ -41,7 +41,6 @@
         &__img{
             margin-top: 1rem;
             width: 300px;
-
               // MEDIA QUERIES
          @include respond(phone){
             width: 265px;
@@ -54,13 +53,11 @@
         flex: 0 0 300px;
         border-right:1px solid rgba(0,0,0,.15);
         border-left: 1px solid rgba(0,0,0,.15);
-
          // MEDIA QUERIES
          @include respond(phone){
              border-left: none;
              flex: 0 0 230px;
              height: 300px;
-
          }
          @include respond(small-phone){
             border-right: none;
@@ -87,10 +84,9 @@
     // Right Container
     &__right-container{
         flex: 0 0 290px;
-
+        // MEDIA QUERIES
         @include respond(phone) {
             flex: 0 0 230px;
-
         }
         &__paragraph{
             font-size: 14px;
